@@ -1,0 +1,153 @@
+@import "~antd/dist/antd.css";
+body {
+  margin: 0;
+  padding: 0;
+  /*font-family: sans-serif;*/
+  font-family: "Atma", cursive;
+}
+
+#root {
+  width: 1024px;
+  height: 768px;
+  margin: 50px auto;
+  border-color: #353535;
+  border-radius: 40px;
+  border-width: 28px 103px 28px 74px;
+  border-style: solid;
+  position: relative;
+}
+
+#root:before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  transform: rotate(270deg);
+  background: url(https://cdn-images-1.medium.com/fit/c/200/200/1*PKHCHuLxDyZ8SV3PKxzizA.png)
+    no-repeat center center / 100%;
+  width: 85px;
+  height: 180px;
+  top: 40%;
+}
+
+#root:after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: #5c5c5c;
+  position: absolute;
+  right: -79px;
+  top: 50%;
+  border: 1px inset #7b7b7b;
+}
+
+.topbar {
+  font-size: 40px;
+  text-align: center;
+}
+
+.App {
+  height: 728px ;
+}
+
+.app-container {
+  margin: 0 10px;
+  height: 600px;
+}
+
+.card {
+
+  &-row {
+    margin-bottom: 10px;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  &-item {
+    height: 200px;
+    background: #f3f4f7;
+    
+    .ant-card-body {
+      display: flex;
+      padding: 10px;
+      height: 100%;
+  
+      .image {
+        flex: 0 0 130px;
+        margin-right: 15px;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+  
+      .content {
+        flex: 1;
+
+        .content-title {
+          font-size: 24px;
+          margin-bottom: 5px;
+        }
+  
+        .content-feature {
+
+          .item {
+            display: flex;
+
+            &:not(:last-child) {
+              margin-bottom: 7.5px;
+            }
+  
+            .name {
+              flex: 0 0 50px;
+            }
+          }
+        }
+        .content-icon{
+          margin-top: 8px;
+          img{
+            margin-right: 8px; 
+            width: 35px;
+          }
+        }
+      }
+
+      .ant-progress-inner {
+        height: 25px;
+        background: #d5d6dc;
+      }
+
+      .ant-progress-bg {
+        height: 100% !important;
+        background: #f3701a;
+      }
+    }
+  }
+}
+
+.footer {
+  background: #ec5656;
+height: 53px;
+position: relative;
+  &__img {
+    position: absolute;
+    background: #ec5656;
+    box-shadow: 0 0 .1rem rgba($color: #000000, $alpha: .15);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 50px;
+      margin: auto;
+    }
+  }
+ 
+}
